@@ -1,6 +1,9 @@
 import { useState } from "react"
 import { useChat } from "../context/ChatContext"
 import { Link, useNavigate } from "react-router-dom"
+import "@theme-toggles/react/css/Classic.css"
+import { Classic } from "@theme-toggles/react"
+
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
@@ -69,11 +72,9 @@ export default function Chat() {
           <div className="popup">
             <h2>Configuración de Chat</h2>
             <h3>Cambiar tema:</h3>
-            <select name="" id="">
-              <option value="">Claro</option>
-              <option value="">Oscuro</option>
-            </select><br></br>
-            <button onClick={handleClosePopup}>Cerrar</button>
+              <Classic duration={750} className="theme-toggle"/>
+
+            <button className="popup-close-btn" onClick={handleClosePopup}>Cerrar</button>
           </div>
         </section>
       }
