@@ -71,8 +71,20 @@ export default function Chat() {
         showPopup === true && <section className="cont-popup">
           <div className="popup">
             <h2>Configuración de Chat</h2>
-            <h3>Cambiar tema:</h3>
+            <div>
+              <h3>Cambiar tema:</h3>
               <Classic duration={750} className="theme-toggle"/>
+            </div>
+
+            <div>
+              <h3>Cambiar estado a offline:</h3>
+              <label class="switch">
+                <input type="checkbox"></input>
+                <span class="slider round"></span>
+              </label>
+            </div>
+            
+            
 
             <button className="popup-close-btn" onClick={handleClosePopup}>Cerrar</button>
           </div>
