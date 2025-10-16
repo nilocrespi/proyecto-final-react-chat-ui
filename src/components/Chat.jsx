@@ -85,7 +85,6 @@ export default function Chat() {
             </div>
             
             
-
             <button className="popup-close-btn" onClick={handleClosePopup}>Cerrar</button>
           </div>
         </section>

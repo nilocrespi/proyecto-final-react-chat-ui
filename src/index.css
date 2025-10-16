@@ -348,6 +348,26 @@ input:checked + .slider:before {
   margin-top: 10px;
 }
 
+/*Help Page*/
+
+.help-main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #159f30, #00c6ff);
+}
+
+.help-box {
+  width: 50%;
+  height: 85%;
+  border-radius: 20px;
+  background-color:antiquewhite;
+  box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.205);
+}
+
+
 /* Resposive mínimo para mobile */
 @media (max-width: 480px) {
   .sidebar {
