@@ -425,7 +425,8 @@ input:checked + .slider:before {
 }
 
 .help-box h1 {
-  height: 7%;
+  padding-top: 0.5em;
+  height: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,13 +441,13 @@ input:checked + .slider:before {
     "howto howto";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: fit-content(25%) fit-content(45%) fit-content(30%);
+  align-content: center;
 }
 
 .help-text div {
-  margin: 0.5em;
   border-radius: 15px;
   background: linear-gradient(195deg, #ace9b8, #b6e3f0);
-  box-shadow: 10px 10px 15px -5px rgb(80, 80, 80) (0, 0, 0, 0.205);
+  box-shadow: 10px 10px 15px -5px black(80, 80, 80) (0, 0, 0, 0.205);
 }
 
 .help-genFunct {
@@ -460,6 +461,12 @@ input:checked + .slider:before {
   font-size: 1rem;
   max-height: 100%;
   overflow: auto;
+  margin-inline: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.help-genFunct h2 {
+  text-align: center;
 }
 
 .help-genFunct p {
@@ -482,6 +489,7 @@ input:checked + .slider:before {
   max-height: 100%;
   overflow: auto;
   font-size: 1rem;
+  margin-inline: 0.4em;
 }
 
 .help-utTech h2{
@@ -506,6 +514,8 @@ input:checked + .slider:before {
   hyphens: auto;
   max-height: 100%;
   overflow: auto;
+  margin-inline: 0.4em;
+  margin-block: 0.4em;
 }
 
 .help-possFeatures h2 {
@@ -528,6 +538,12 @@ input:checked + .slider:before {
   hyphens: auto;
   max-height: 100%;
   overflow: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  border: solid 1px black;
 }
 
 .help-howToApp h2 {
@@ -540,12 +556,39 @@ input:checked + .slider:before {
 }
 
 .help-howToApp-listCont ul{
-  list-style-type: none;
+  /*list-style-type: none;*/
   font-size: 0.85rem;
+  background-color: antiquewhite;
+  border-left: solid 5px #159f30;
+  padding-block: 0.5em;
+  padding-left: 1.2em;
 }
 
-.text-info {
-  height: 3%;
+.help-howToApp-listCont ul li{
+  padding-top: 0.1em;
+}
+
+.back-cont {
+  height: 5%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 5px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 550;
+  margin-right: 1.5em;
+  border-radius: 10px;
+  padding-inline: 1em;
+  text-decoration: none;
+  background: #159f30;
+}
+
+.back-link:visited {
+  color: black;
 }
 
 

@@ -38,8 +38,9 @@ const Help = () => {
             </div>
           </div>
         </div>
-
-        <p className="text-info">Ir a <Link to="/chat">Chat</Link></p>
+        <div className="back-cont">
+          <Link className="back-link" to="/chat">Ir a Chat</Link>
+        </div>
       </section>
     </main>
   )
