@@ -10,7 +10,7 @@ Aplicacion desarrollada como parte del curso de desarrollo web frontend, diseña
 ```
 react-chat-ui/
 ├── frontend/          # Cliente React con Vite
-└── README.md    # Este archivo
+└── README.md          # Este archivo
 ```
 
 ## Cómo funciona
