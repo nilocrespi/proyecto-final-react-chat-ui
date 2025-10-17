@@ -422,7 +422,49 @@ input:checked + .slider:before {
   flex-direction: column;
 }
 
+.help-box h1 {
+  height: 10%;
+}
 
+.help-text {
+  height: 85%;
+  display: grid;
+  grid-template-areas:
+    "functionalities technologies"
+    "functionalities features"
+    "functionalities howto";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.help-text div {
+  padding: 1em;
+  margin: 1em;
+}
+
+.help-genFunct {
+  grid-area: functionalities;
+  background-color: #007bff;
+}
+
+.help-utTech {
+  grid-area: technologies;
+  background-color: #159f30;
+}
+
+.help-possFeatures {
+  grid-area: features;
+  background-color: chocolate;
+}
+
+.help-howToApp {
+  grid-area: howto;
+  background-color: crimson;
+}
+
+.text-info {
+  height: 5%;
+}
 
 /* Resposive mínimo para mobile */
 @media (max-width: 480px) {
