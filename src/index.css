@@ -292,6 +292,7 @@ form .text-info {
   align-items: center;
   height: 30%;
   justify-content: center;
+  padding-bottom: 2em;
 }
 
 .theme-toggle {
@@ -312,6 +313,7 @@ form .text-info {
   align-items: center;
   height: 30%;
   justify-content: center;
+  padding-bottom: 2em;
 }
 
 .offline-toggle {
@@ -413,58 +415,139 @@ input:checked + .slider:before {
 }
 
 .help-box {
-  width: 65%;
-  height: 85%;
+  width: 80%;
+  height: 95%;
   border-radius: 20px;
-  background-color:antiquewhite;
+  background-color:bisque;
   box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.205);
   display: flex;
   flex-direction: column;
 }
 
 .help-box h1 {
-  height: 10%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .help-text {
-  height: 85%;
+  height: 90%;
   display: grid;
   grid-template-areas:
     "functionalities technologies"
     "functionalities features"
-    "functionalities howto";
+    "howto howto";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: fit-content(25%) fit-content(45%) fit-content(30%);
 }
 
 .help-text div {
-  padding: 1em;
-  margin: 1em;
+  margin: 0.5em;
+  border-radius: 15px;
+  background: linear-gradient(195deg, #ace9b8, #b6e3f0);
+  box-shadow: 10px 10px 15px -5px rgb(80, 80, 80) (0, 0, 0, 0.205);
 }
 
 .help-genFunct {
   grid-area: functionalities;
-  background-color: #007bff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-size: 1rem;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.help-genFunct p {
+  padding-top: 1px;
+  text-align: justify;
+}
+
+.help-genFunct span {
+  font-weight:bold;
 }
 
 .help-utTech {
   grid-area: technologies;
-  background-color: #159f30;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-height: 100%;
+  overflow: auto;
+  font-size: 1rem;
+}
+
+.help-utTech h2{
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.help-utTech p{
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .help-possFeatures {
   grid-area: features;
-  background-color: chocolate;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.help-possFeatures h2 {
+  text-align: center;
+  padding-bottom: 0.7em;
+}
+
+.help-possFeatures-list{
+  padding-inline: 1em;
+  font-size: 1rem;
 }
 
 .help-howToApp {
   grid-area: howto;
-  background-color: crimson;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.help-howToApp h2 {
+  font-size: 0.9rem;
+  padding-left:0.5em;
+}
+
+.help-howToApp-listCont {
+  padding: 0.5em;
+}
+
+.help-howToApp-listCont ul{
+  list-style-type: none;
+  font-size: 0.85rem;
 }
 
 .text-info {
-  height: 5%;
+  height: 3%;
 }
+
 
 /* Resposive mínimo para mobile */
 @media (max-width: 480px) {

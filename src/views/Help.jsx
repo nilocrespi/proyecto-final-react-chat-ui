@@ -20,7 +20,7 @@ const Help = () => {
           </div>
           <div className="help-possFeatures">
             <h2>Posibles mejoras futuras</h2>
-            <ul>
+            <ul className="help-possFeatures-list">
               <li>Implementacion de backend con persistencia de datos externa a la aplicacion</li>
               <li>Completa funcionalidad de los botones de camara y galeria de imagenes en el header del componente Chat</li>
               <li>Funcionalidad para enviar y recibir mensajes con archivos en distintos formatos de media (principalmente imagen, sonido y video)</li>
@@ -28,7 +28,7 @@ const Help = () => {
           </div>
           <div className="help-howToApp">
             <h2>Para utilizar la aplicacion:</h2>
-            <div>
+            <div className="help-howToApp-listCont">
               <ul>
                 <li>Clonar codigo desde el <Link to="https://github.com/nilocrespi/proyecto-final-react-chat-ui" target="_blank">repositorio</Link></li>
                 <li>Instalar dependencias desde la terminal utilizando <span>npm install</span></li>
