@@ -29,7 +29,7 @@ Todas las rutas se encuentran protegidas en funcion de la validacion del logeo d
 
 ###Prerrequisitos
 - **Node.js**
--**npm**
+- **npm**
 
 ###Instalacion
 ```bash
@@ -40,7 +40,7 @@ cd proyecto-final-react-chat-ui
 # Instalacion de dependencias
 npm install
 
-#Ejecucion
+# Ejecucion
 npm run dev
 ```
 
