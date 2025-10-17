@@ -27,11 +27,11 @@ Todas las rutas se encuentran protegidas en funcion de la validacion del logeo d
 
 ## Instalación y ejecucion
 
-###Prerrequisitos
+### Prerrequisitos
 - **Node.js**
 - **npm**
 
-###Instalacion
+### Instalacion
 ```bash
 # Clonar el repositorio
 git clone https://github.com/nilocrespi/proyecto-final-react-chat-ui.git
