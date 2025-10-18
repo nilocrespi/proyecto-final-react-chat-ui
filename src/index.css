@@ -1,3 +1,5 @@
+/*DESKTOP STYLES*/
+
 /*GLOBAL DESKTOP STYLES*/
 
 * {
@@ -598,11 +600,18 @@ input:checked + .slider:before {
 }
 
 
+/*MOBILE STYLES*/
+
 /* Resposive mínimo para mobile */
 @media (max-width: 480px) {
+
+  /*Sidebar.jsx MOBILE STYLES*/
+
   .sidebar {
     display: none;
   }
+
+  /*Chat.jsx MOBILE STYLES*/
 
   header {
     flex-direction: column;
