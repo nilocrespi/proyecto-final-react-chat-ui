@@ -9,10 +9,8 @@ export default function Chat() {
   const [msg, setMsg] = useState("")
   const [showPopup, setShowPopup] = useState(false)
 
-  // 1. Obtenemos del contexto todo lo necesario
   const { users, selectedUser, setUsers } = useChat()
 
-  // 2. Buscamos el usuario activo
   const user = users.find(u => u.id === selectedUser)
 
   const navigate = useNavigate()
@@ -25,12 +23,10 @@ export default function Chat() {
     )
   }
 
-  // 3. Manejo del input
   const handleChange = (event) => {
     setMsg(event.target.value)
   }
 
-  // 4. Cuando enviamos el formulario
   const handleSubmit = (event) => {
     event.preventDefault()
 
@@ -40,20 +36,19 @@ export default function Chat() {
       time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
     }
 
-    // ✅ Actualizamos el estado de manera INMUTABLE
-    const updatedUsers = users.map(u =>
+    const updatedUsers = users.map (u =>
       u.id === user.id
         ? { ...u, messages: [...u.messages, newMessage] }
         : u
     )
 
-    setUsers(updatedUsers) // esto dispara el useEffect del contexto que guarda en localStorage
+    setUsers(updatedUsers)
 
     setMsg("")
   }
 
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn")
+    localStorage.removeItem ("isLoggedIn")
     navigate("/")
   }
 
@@ -92,6 +87,7 @@ export default function Chat() {
           </div>
         </section>
       }
+
       <div className="chat">
         <header className="chat-header">
           <div>
