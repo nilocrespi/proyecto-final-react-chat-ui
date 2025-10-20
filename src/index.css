@@ -608,6 +608,14 @@ input:checked + .slider:before {
   /*Sidebar.jsx MOBILE STYLES*/
 
   .sidebar {
+    width: 70px;
+  }
+
+  .sidebar .search{
+    display: none;
+  }
+
+  .user-info {
     display: none;
   }
 
@@ -619,5 +627,35 @@ input:checked + .slider:before {
 
   .popup {
     width: 80%;
+    height: fit-content;
+  }
+
+  .popup h2 {
+    padding-bottom: 10px;
   }
 }
+
+  /*Help.jsx MOBILE STYLES*/
+
+  .help-main {
+    height: fit-content;
+  }
+
+  .help-box {
+    height: fit-content;
+    width: 90%;
+  }
+
+  .help-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .help-genFunct {
+    height: auto;
+  }
+
+  .help-howToApp {
+    width: 100%;
+  }
